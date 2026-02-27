@@ -1,0 +1,14 @@
+<Project Sdk="MSTest.Sdk">
+    <PropertyGroup>
+        <OutputType>exe</OutputType>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../Slone.Numerics/Slone.Numerics.csproj" />
+        <ProjectReference Include="../Slone.Numerics.Test.Common/Slone.Numerics.Test.Common.csproj" />
+    </ItemGroup>
+</Project>

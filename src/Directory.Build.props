@@ -1,0 +1,13 @@
+<Project>
+    <PropertyGroup>
+        <Version>0.1.0</Version>
+        <Authors>SloneWang;</Authors>
+        <Copyright>Copyright 2026 Slone Wang. All Rights Reserved. </Copyright>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    </PropertyGroup>
+</Project>

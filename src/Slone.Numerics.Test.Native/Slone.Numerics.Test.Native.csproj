@@ -1,0 +1,17 @@
+<Project Sdk="MSTest.Sdk">
+    <PropertyGroup>
+        <OutputType>exe</OutputType>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PublishAot>true</PublishAot>
+        <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../Slone.Numerics/Slone.Numerics.csproj" />
+        <ProjectReference Include="../Slone.Numerics.Test.Common/Slone.Numerics.Test.Common.csproj" />
+
+        <Compile Include="../Slone.Numerics.Test/BitReverseTest.cs" />
+    </ItemGroup>
+</Project>

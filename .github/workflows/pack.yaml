@@ -1,0 +1,27 @@
+name: Pack & Publish to Nuget
+on:
+  release:
+    types: published
+jobs:
+  pack:
+    runs-on: macos-latest
+    permissions:
+      id-token: write
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v6
+      with:
+        ref: ${{github.ref_name}}
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v5
+      with:
+        dotnet-version: 10.0.1xx
+    - name: Create Package
+      run: dotnet pack src/Slone.Numerics
+    - name: Login Nuget
+      uses: NuGet/login@v1
+      id: login
+      with:
+        user: ${{secrets.NUGET_USER}}
+    - name: Push Package
+      run: dotnet nuget push src/Slone.Numerics/bin/Release/*.nupkg --api-key ${{steps.login.outputs.NUGET_API_KEY}} --source https://api.nuget.org/v3/index.json

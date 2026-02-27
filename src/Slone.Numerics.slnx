@@ -1,0 +1,13 @@
+<Solution>
+    <Folder Name="/Solution Files/">
+        <File Path="Directory.Build.props" />
+        <File Path="Directory.Packages.props" />
+        <File Path="global.json" />
+    </Folder>
+    <Project Path="Slone.Numerics/Slone.Numerics.csproj" />
+    <Project Path="Slone.Numerics.Generator/Slone.Numerics.Generator.csproj" />
+    <Project Path="Slone.Numerics.Test/Slone.Numerics.Test.csproj" />
+    <Project Path="Slone.Numerics.Test.Benchmark/Slone.Numerics.Test.Benchmark.csproj" />
+    <Project Path="Slone.Numerics.Test.Common/Slone.Numerics.Test.Common.csproj" />
+    <Project Path="Slone.Numerics.Test.Native/Slone.Numerics.Test.Native.csproj" />
+</Solution>

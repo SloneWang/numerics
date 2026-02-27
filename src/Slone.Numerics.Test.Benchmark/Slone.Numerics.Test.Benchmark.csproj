@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>exe</OutputType>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="BenchmarkDotNet" />
+        <PackageReference Include="BenchmarkDotNet.TestAdapter" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" />
+
+        <ProjectReference Include="../Slone.Numerics/Slone.Numerics.csproj" />
+        <ProjectReference Include="../Slone.Numerics.Test.Common/Slone.Numerics.Test.Common.csproj" />
+    </ItemGroup>
+</Project>
